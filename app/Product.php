@@ -61,5 +61,13 @@ class Product extends Model
 		
 		return false;
 	}
+	
+	public function bgImgFront(){
+		return config("services.design_url") . "/uploads/product/unisex-cotton-tee-front.png";
+	}
+	
+	public function bgImgBack(){
+		return config("services.design_url") . "/uploads/product/unisex-cotton-tee-back.png";
+	}
 
 }

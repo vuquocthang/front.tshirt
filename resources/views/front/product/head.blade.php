@@ -15,6 +15,18 @@
             -moz-border-radius: 16px;
             -webkit-border-radius: 16px;
         }
+
+        @media (min-width: 481px) and (max-width: 767px) {
+            .swatch-color{
+                float: right
+            }
+        }
+
+        @media (min-width: 320px) and (max-width: 480px) {
+            .swatch-color{
+                float: right
+            }
+        }
     </style>
 	
     <link rel="alternate" type="application/rss+xml" title="Famita &raquo; Feed" href="../../feed/index.html" />

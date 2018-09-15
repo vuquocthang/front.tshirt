@@ -200,6 +200,49 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="order-summary order-summary--white no-border">
+                                        <div class="order-summary-header">
+                                            <h2>
+                                                <label class="control-label">Cách thanh toán</label>
+                                            </h2>
+                                        </div>
+
+                                        @if( $order->cus_payment_method == 1 )
+                                        <div class="summary-section no-border no-padding-top">
+                                            <div class="blank-slate">
+                                                <p><b>Chuyển khoản với nội dung : {{ $order->id }}</b></p>
+
+                                                <p> - Số Tài Khoản :  <b>0451000435903</b></p>
+                                                <p> - Tên Người Nhận : <b>Vu Quoc Thang</b></p>
+                                                <p> - Ngân Hàng : <b>Vietcombank Chi Nhánh Thành Công</b></p>
+
+                                            </div>
+                                        </div>
+                                        @elseif( $order->cus_payment_method == 3 )
+                                        <div class="summary-section no-border no-padding-top">
+                                            <div class="blank-slate">
+                                                <p><b>Hà Nội : </b></p>
+
+                                                <p> - Địa chỉ : Số 1 Lương Yên, Q.Hai Bà Trưng, Hà Nội </p>
+                                                <p> - Số điện thoại: 0934 323 882</p>
+                                                <p> - Email: partner1@kingclothes.com</p>
+
+
+
+                                                <p><b>TP Hồ Chí Minh</b></p>
+
+                                                <p> - Địa chỉ : Số 1 Lương Yên, Q.1, TP HCM </p>
+                                                <p> - Số điện thoại: 0934 323 882</p>
+                                                <p> - Email: partner2@kingclothes.com</p>
+
+                                            </div>
+                                        </div>
+                                        @endif
+
+                                    </div>
+                                </div>
 								
 								<div class="col-md-6 col-sm-6">
                                     <div class="order-summary order-summary--white no-border">

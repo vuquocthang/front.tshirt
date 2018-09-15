@@ -24,7 +24,7 @@
                 <div class="slick-carousel apus-woocommerce-product-gallery" data-carousel="slick" data-items="1" data-smallmedium="1" data-extrasmall="1" data-pagination="false" data-nav="false" data-slickparent="true">
                     <div data-thumb="" style="position: relative" class="woocommerce-product-gallery__image">
                         <a href="">
-                            <img class="bgImg" style="background-color: #{{ $product->color_code }}" width="800" height="1017" src="http://design.fb88.ga:81/uploads/product/unisex-cotton-tee-front.png" class="wp-post-image" alt="" title="p4" data-caption="" />
+                            <img class="bgImg" style="background-color: #{{ $product->color_code }}" width="800" height="1017" src="{{ $product->bgImgFront() }}" class="wp-post-image" alt="" title="p4" data-caption="" />
                         </a>
 						
 						<div class="design-img" >
@@ -33,7 +33,7 @@
                     </div>
                     <div data-thumb="" style="position: relative" class="woocommerce-product-gallery__image">
                         <a href="">
-                            <img class="bgImg" style="background-color: #{{ $product->color_code }}" width="800" height="1017" src="http://design.fb88.ga:81/uploads/product/unisex-cotton-tee-back.png" class="wp-post-image" alt="" title="p4" data-caption="" />
+                            <img class="bgImg" style="background-color: #{{ $product->color_code }}" width="800" height="1017" src="{{ $product->bgImgBack() }}" class="wp-post-image" alt="" title="p4" data-caption="" />
                         </a>
 						
 						<div class="design-img" >
@@ -212,5 +212,7 @@
                 </div>
             </div>
         </div>
+		
+		@include('front.product.cart')
     </div>
 </div>

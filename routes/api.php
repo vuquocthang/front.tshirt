@@ -33,7 +33,13 @@ Route::get('/getdistricts/{provinceId}', function($provinceId){
 });
 
 Route::prefix('product')->group(function(){
+	Route::get("/", function(){
+		return "p";
+	});
+	
 	Route::post('/', function(Request $req){
+		header('Access-Control-Allow-Origin: http://design.fb88.ga');  
+		#header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
 		$check = Product::where('design_id', $req->design_id)->first();
 		
 		if( !$check ){

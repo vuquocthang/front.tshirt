@@ -176,7 +176,7 @@
                                                     </tfoot>
                                                 </table>
                                                 <div style="margin:auto">
-                                                    <a href="#" style="display:inline-block;text-decoration:none;background-color:#00b7f1!important;margin-right:30px;text-align:center;border-radius:3px;color:#fff;padding:5px 10px;font-size:12px;font-weight:bold;margin-left:35%;margin-top:5px" target="_blank" data-saferedirecturl="">Chi tiết đơn hàng tại Kingclothes</a>
+                                                    <a href="{{ route('order', $order->id_hash) }}" style="display:inline-block;text-decoration:none;background-color:#00b7f1!important;margin-right:30px;text-align:center;border-radius:3px;color:#fff;padding:5px 10px;font-size:12px;font-weight:bold;margin-left:35%;margin-top:5px" target="_blank" data-saferedirecturl="{{ route('order', $order->id_hash) }}">Chi tiết đơn hàng tại Kingclothes</a>
                                                 </div>
                                             </td>
                                         </tr>
@@ -186,7 +186,7 @@
                                                 <br>
                                                 <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#444;line-height:18px;font-weight:normal">
                                                     Trường hợp quý khách có những băn khoăn về đơn hàng, có thể xem thêm mục
-                                                    <a href="https://mandrillapp.com/track/click/31005910/hotro.tiki.vn?p=eyJzIjoicFNvOU1TUmNfVVhDQW95ZmtSc1g3ZElYM3U0IiwidiI6MSwicCI6IntcInVcIjozMTAwNTkxMCxcInZcIjoxLFwidXJsXCI6XCJodHRwOlxcXC9cXFwvaG90cm8udGlraS52blxcXC9oY1xcXC92aVxcXC8_dXRtX3NvdXJjZT10cmFuc2FjdGlvbmFsK2VtYWlsJnV0bV9tZWRpdW09ZW1haWwmdXRtX3Rlcm09bG9nbyZ1dG1fY2FtcGFpZ249bmV3K29yZGVyXCIsXCJpZFwiOlwiNWUwNTE5ZGYyZTI4NDMyZTlhOTgxNzc0OWYxN2UyMjNcIixcInVybF9pZHNcIjpbXCIyZmVjOGE0OWEyMzkxMzUwMGIxYzkyNTk1N2VlOGNjZDFhZDBmZWZmXCJdfSJ9" title="Các câu hỏi thường gặp" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://mandrillapp.com/track/click/31005910/hotro.tiki.vn?p%3DeyJzIjoicFNvOU1TUmNfVVhDQW95ZmtSc1g3ZElYM3U0IiwidiI6MSwicCI6IntcInVcIjozMTAwNTkxMCxcInZcIjoxLFwidXJsXCI6XCJodHRwOlxcXC9cXFwvaG90cm8udGlraS52blxcXC9oY1xcXC92aVxcXC8_dXRtX3NvdXJjZT10cmFuc2FjdGlvbmFsK2VtYWlsJnV0bV9tZWRpdW09ZW1haWwmdXRtX3Rlcm09bG9nbyZ1dG1fY2FtcGFpZ249bmV3K29yZGVyXCIsXCJpZFwiOlwiNWUwNTE5ZGYyZTI4NDMyZTlhOTgxNzc0OWYxN2UyMjNcIixcInVybF9pZHNcIjpbXCIyZmVjOGE0OWEyMzkxMzUwMGIxYzkyNTk1N2VlOGNjZDFhZDBmZWZmXCJdfSJ9&amp;source=gmail&amp;ust=1534959256937000&amp;usg=AFQjCNEDk8DmYBbhVvjpN8ys15Pikhlyyw">
+                                                    <a href="" title="Các câu hỏi thường gặp" target="_blank" >
                                                         <strong>các câu hỏi thường gặp</strong>.</a>
                                                 </p>
 
@@ -219,7 +219,7 @@
                                                 <p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#444;line-height:18px;font-weight:normal;text-align:right">
 
                                                     <strong>
-                                                        <a style="color:#00a3dd;text-decoration:none;font-size:14px" href="" target="_blank" data-saferedirecturl="">kingclothes.com</a>
+                                                        <a style="color:#00a3dd;text-decoration:none;font-size:14px" href="{{ config('services.front_url') }}" target="_blank" >kingclothes.com</a>
                                                     </strong>
                                                     <br>
                                                 </p>
