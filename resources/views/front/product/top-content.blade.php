@@ -93,7 +93,7 @@
 					<input type="hidden" name="image" value="{!! $product->base64_front !!}" />
 					<input type="hidden" name="img_front" value="{{ $product->img_front }}" />
 					<input type="hidden" name="color_code" value="{{ $product->color_code }}" />
-					<input type="hidden" name="seller_id" id="seller_id" value="" />
+					<input type="hidden" name="seller_id" id="seller_id" value="{{ empty(Request::get('seller_id')) ?  $product->user_id : Request::get('seller_id')  }}" />
 					
                     <table class="variations" cellspacing="0">
                         <tbody>
@@ -157,8 +157,20 @@
                                 <input type="number" id="quantity_5b5f34915f344" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="" />
                             </div>
                             <button type="submit" class="single_add_to_cart_button button alt">Thêm Vào Giỏ Hàng</button>
+
                             <input type="hidden" name="add-to-cart" value="629" />
                             <input type="hidden" name="variation_id" class="variation_id" value="0" />
+                        </div>
+                        <br>
+
+                        <div class="woocommerce-variation-add-to-cart variations_button">
+                            @if( session('ck') )
+                                <input type="text" value="{{ url('p/' . $product->slug . '?seller_id=' . session('ck') ) }}" id="linkForSeller">
+
+                                <button type="button" class="btn-primary" onclick="swal({ type: 'success', title: 'Đã Copy Link!',showConfirmButton: false}); copyLinkForSeller()" >Lấy Link Bán Áo</button>
+                            @else
+                                <button type="button" class="btn-primary" onclick="Swal({ type: 'info', title: 'Bạn Cần Đăng Nhập Trước !',showConfirmButton: false})" >Lấy Link Bán Áo</button>
+                            @endif
                         </div>
                     </div>
                 </form>

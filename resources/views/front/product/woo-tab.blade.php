@@ -18,13 +18,7 @@
                 <div id="tabs-list-description" class="tab-pane active in">
                     <div class="description">
 						<div id="gioi-thieu" class="content js-content" itemprop="description" style="max-height: 500px;">
-							<p><span style="color: #666666; font-family: Roboto, sans-serif; font-size: 16.38px; font-weight: bold;">Áo Thun Logo BTS</span></p>
-							<p>* Chất vải tốt - Giá cả hợp lý</p>
-							<p>* Bộ sản phẩm gồm : 1 Áo</p>
-							<p>* Logo in phun cao cấp thấm màu lên vải&nbsp;</p>
-							<p>* Họa tiết hoa văn in phun kỹ thuật số sắc nét, không bong tróc.</p>
-							<p>* In tên, in số, in logo, IN NHANH-BỀN - ĐẸP, hình in bảo hành vĩnh viễn</p>
-							
+							{!! $product->description !!}
 						</div>
 					</div>
                 </div>

@@ -118,10 +118,19 @@ Route::get('/home', function(Request $req){
 });
 
 Route::get('addCookie', function(Request $request, CookieJar $cookieJar){
-	$cookieJar->queue(cookie('ck', $request->get('ck'), 45000));
+	//$cookieJar->queue(cookie('ck', $request->get('ck'), 45000));
 	
-	echo $request->cookie('ck');
+	//echo $request->cookie('ck');
+    //$_SESSION['ck'] = $request->get('ck');
+    //Session::set('ck', $request->get('ck'));
+
+    header("Access-Control-Allow-Origin: *");
+
+    session(['ck' => $request->get('ck')]);
+
+    //dd(session('ck'));
 });
+
 
 Route::get('/email', function () {
   Mail::send('emails.test', [], function ($message) {

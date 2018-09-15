@@ -118,12 +118,15 @@ class HomeController extends Controller
 		]);
 	}
 	
-	public function product(Product $product){
+	public function product(Product $product, Request $req){
 		if( !$product->hasCampaign() ){
 			return redirect()->route('shop');
 		}
 		
 		$colors = ProductColor::all();
+
+		//dd($product);
+        //dd( empty($req->get('seller_id')));
 	
 		return view('front.product.index', [
 			'product' => $product,

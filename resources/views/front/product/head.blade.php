@@ -32,6 +32,10 @@
     <link rel="alternate" type="application/rss+xml" title="Famita &raquo; Feed" href="../../feed/index.html" />
     <link rel="alternate" type="application/rss+xml" title="Famita &raquo; Comments Feed" href="../../comments/feed/index.html" />
     <link rel="alternate" type="application/rss+xml" title="Famita &raquo; Leather shopper bag Comments Feed" href="feed/index.html" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.26.28/dist/sweetalert2.all.min.js"></script>
+
+
     <script type="text/javascript">
         window._wpemojiSettings = {
             "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/",

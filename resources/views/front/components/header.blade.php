@@ -105,7 +105,7 @@
                         <p class="total text-theme empty"><strong>Currently Empty:</strong> <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>0.00</span>
                         </p>
                         <p class="buttons clearfix">
-                            <a href="shop/index.html" class="btn btn-block btn-primary wc-forward">Continue shopping</a>
+                            <a href="#" class="btn btn-block btn-primary wc-forward">Continue shopping</a>
                         </p>
                     </div>
                     <div class="cart-bottom">
@@ -161,8 +161,11 @@
                         <div class="header-right clearfix">
                             <div class="pull-right">
                                 <div class="top-wrapper-menu">
+                                    @if( ! session('ck') )
                                     <a class="drop-dow" href="{{ config('services.dashboard_url') }}/login"><i class="icon_lock_alt"></i></a>
-                                   
+                                    @else
+                                    <a class="drop-dow" href="{{ config('services.dashboard_url') }}"><i class="fa fa-user"></i></a>
+                                    @endif
                                 </div>
                             </div>
                             <div class="pull-right">

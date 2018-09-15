@@ -384,9 +384,22 @@
 			}
 		}
 		
-		let sellerId = getUrlParameter('seller_id')
+		//let sellerId = getUrlParameter('seller_id')
 		
-		$("#seller_id").val(sellerId)
+		//$("#seller_id").val(sellerId)
+
+
+        function copyLinkForSeller(element) {
+            /* Get the text field */
+            var copyText = document.getElementById("linkForSeller");
+
+            /* Select the text field */
+            copyText.select();
+
+            /* Copy the text inside the text field */
+            document.execCommand("copy");
+        }
+
 	</script>
 </body>
 </html>

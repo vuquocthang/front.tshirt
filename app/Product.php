@@ -7,8 +7,6 @@ use Cviebrock\EloquentSluggable\Sluggable;
 
 class Product extends Model
 {
-    //
-	
 	use Sluggable;
 	
 	protected $table = 'product';
